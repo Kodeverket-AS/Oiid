@@ -1,12 +1,14 @@
-import NavbarDesktop from "@/components/layout/navigation/desktop/navbar";
-import NavbarMobile from "@/components/layout/navigation/mobile/navbar";
+import { NavBarDesktop } from "@/components/layout/navigation/desktop/navbar";
+import { NavBarMobile } from "../navigation/mobile/navbar";
 
 export function Header() {
   return (
     <header className="container flex justify-between">
-      
-      <NavbarDesktop />
-      <NavbarMobile />
+      <span>
+        logo.svg
+      </span>
+      <NavBarDesktop />
+      <NavBarMobile />
     </header>
   );
 }
