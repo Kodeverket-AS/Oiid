@@ -3,6 +3,7 @@ import "@/assets/styles/globals.css";
 import { Header } from "@/components/layout/header/header";
 import { Footer } from "@/components/layout/footer/footer";
 import { Hero } from "@/components/layout/hero/hero";
+import { Superfan } from "@/components/layout/superfan/superfan";
 
 export const metadata: Metadata = {
   title: "Tempalte page",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Hero />
+        <Superfan />
         {children}
         <Footer />
       </body>
