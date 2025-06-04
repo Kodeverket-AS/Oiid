@@ -9,9 +9,9 @@ const NavbarMobile = () => {
   };
 
   return (
-    <nav className="fixed w-full h-16 top-12 bg-[#121212] flex items-center justify-between px-4 sm:px-8 text-white md:hidden">
+    <nav className="w-full h-26  bg-[#121212] flex items-center justify-between   text-white md:hidden">
       <div className="flex items-center">
-        <img src="./logo.png" alt="logo" />
+        <img src="./logo.png" alt="logo" className="h-[64px] w-auto" />
       </div>
 
       <div>

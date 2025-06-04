@@ -1,8 +1,8 @@
 const NavbarDesktop = () => {
   return (
-    <nav className=" w-full h-16  bg-[#121212] flex items-center justify-between px-[108px] text-white">
+    <nav className="hidden md:flex w-full h-26 bg-[#121212] items-center justify-between  text-white">
       <div className="flex items-center">
-        <img src="./logo.png" alt="logo" />
+        <img src="./logo.png" alt="logo" className="h-[64px] w-auto" />
       </div>
 
       <div className="flex items-center space-x-8">

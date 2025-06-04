@@ -13,7 +13,7 @@ const Footer = () => {
               className="h-[64px] w-auto" 
             />
           </div>
-          <div className="text-sm text-gray-400">
+          <div className="text-sm ">
             Utviklet i regi av Kodeforest Bergen © 2025
           </div>
         </div>
@@ -22,13 +22,13 @@ const Footer = () => {
         <div className="flex space-x-6">
           <a 
             href="/privacy" 
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="text-sm hover:text-white transition-colors"
           >
             Privacy Policy
           </a>
           <a 
             href="/terms" 
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="text-sm hover:text-white transition-colors"
           >
             Terms of Service
           </a>
