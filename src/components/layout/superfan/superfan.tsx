@@ -10,72 +10,71 @@ export function Superfan() {
                     className="fade-edge md:w-1/3"
                     src="/Superfan.jpg"
                     alt="Superfan"
-                    width={320}
-                    height={320}
+                    width={300}
+                    height={300}
                     draggable={false}
                      />                
 
-                <div className='md:w-1/2 flex flex-col self-center md:ml-10'>
-                    <h1 className='text-6xl  md:ml-10'>Hva er Superfan?</h1>
-                    <p className='text-md mt-6 md:ml-11'>The Superfan app powered by Oiid allows the artist to create a curated safe space, where the artist and their most dedicated fans meet.</p>
-                        <div className='mt-6 md:ml-11'>
+                <div className='flex flex-col md:w-1/2 md:ml-15'>
+                    <h1 className='text-5xl'>Hva er Superfan?</h1>
+                    <p className='mt-5'>The Superfan app powered by Oiid allows the artist to create a curated safe space, where the artist and their most dedicated fans meet.</p>
+                        <div className=''>
                             <div>
-                             <h3 className='font-bold'>Våre fans og artister:</h3>
+                             <h3 className='mt-8 mb-1'>Våre fans og artister:</h3>
                             </div>
                             <div>
-                                <div className='flex flex-row'>
-                                <Image
+                                <div className='flex flex-row w-dvw-full overflow-x-auto'>
+                                <Image 
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 19.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                                     <Image
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 20.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                                     <Image
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 21.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                                     <Image
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 22.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                                     <Image
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 23.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                                     <Image
                                     className='border-3 p-1 border-indigo-600 rounded-full'
                                     src="/Rectangle 24.png"
                                     alt=""
-                                    width={320}
-                                    height={320}
+                                    width={70}
+                                    height={70}
                                     draggable={false}
                                     />
                             </div>
-                            <p>komentar felt</p>
-                            </div>
-                            
+                            <p className='mt-1'>[komentar felt]</p>
+                        </div>                            
                     </div>
                 </div>                        
         </section>
