@@ -1,3 +1,12 @@
+import SoundBar from "@/components/SoundBar/SoundBar";
+
+
 export default function Home() {
-  return <main></main>;
+
+
+  return <main>
+
+<SoundBar/>
+
+  </main>;
 }
