@@ -5,17 +5,17 @@ import Image from "next/image";
 export function How() {
   return (
     <section>
-      <div className="mt-20 h-full w-full flex justify-center items-center  flex-col lg:flex-row  ">
-        <div className="  text-start px-6 lg:mx-1  space-y-10 mb-10">
-          <h1 className="text-5xl font-semibold leading-tight ">
+      <div className="mt-20 h-full w-full flex justify-center gap-10 items-center  flex-col lg:flex-row  ">
+        <div className="w-full text-start p-2   space-y-10 mb-10">
+          <h1 className="text-4xl lg:text-5xl font-semibold leading-tight ">
             Hvordan funker det?
           </h1>
 
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h2 className="text-4xl font-semibold">
               Bli kunstneren i din fankultur
             </h2>
-            <p className="mb-10 lg:mb-0 ">
+            <p className="md:w-4/5  ">
               Superfansen kan registrere seg med sin egen bruker for å lage sine
               egne versjoner av artistens utvalgte sanger, samhandle og
               samarbeide med andre superfans samt få tidlig tilgang til
@@ -54,7 +54,7 @@ export function How() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex justify-evenly my-12 ">
+      <div className="w-full h-full flex justify-evenly my-20 ">
         <h1 className="text-5xl w-2/3">
           Gå til registreringssiden vår for å starte din egen superfan-app i
           dag!
