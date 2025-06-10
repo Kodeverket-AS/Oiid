@@ -1,13 +1,20 @@
 import Image from "next/image";
 
-export function Members() {
+type MembersProps = {
+  src: string;
+  alt?: string;
+  width?: number;
+  height?: number;
+};
+
+export function Members( { src, alt = "", width = 70, height = 70 }: MembersProps ) {
 return (
-    <span className="pl-2 *:-ml-2 border-3 border-indigo-600 rounded-full">
+    <span className=" -m-2 border-4 border-indigo-600 rounded-full">
         <Image 
-            src=""
-            alt=""
-            width={70}
-            height={70}
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
             draggable={false}
             />
     </span>

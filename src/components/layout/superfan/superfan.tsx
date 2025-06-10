@@ -24,13 +24,43 @@ export function Superfan() {
                              <h3 className='mt-8 mb-1'>Våre fans og artister:</h3>
                             </div>
                             <div>
-                                <div className='flex flex-row'>
-                                <Members />
-                                <Members />
-                                <Members />
-                                <Members />
-                                <Members />
-                                <Members />                                    
+                                <div className='flex flex-row mt-3 mb-3 justifycontent-center items-center'>
+                                <Members 
+                                src='/Rectangle 19.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                />
+                                <Members
+                                src='/Rectangle 20.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                 />
+                                <Members 
+                                src='/Rectangle 21.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                />
+                                <Members 
+                                src='/Rectangle 22.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                />
+                                <Members 
+                                src='/Rectangle 23.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                />
+                                <Members 
+                                src='/Rectangle 24.png'
+                                alt='profile picture'
+                                width={70}
+                                height={70}
+                                />                                   
                             </div>
                             <p className='mt-1'>[komentar felt]</p>
                         </div>                            
