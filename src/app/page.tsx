@@ -1,10 +1,11 @@
-
 import ContactForm from "@/components/ContactForm";
+import { How } from "@/components/how";
 
-
-  return <main>
-    <How />
-    <ContactForm/>
-  </main>;
-
+export default function page() {
+  return (
+    <main>
+      <How />
+      <ContactForm />
+    </main>
+  );
 }
