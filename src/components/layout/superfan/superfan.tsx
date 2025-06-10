@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Members } from '@/components/Members';
 
 
 export function Superfan() {
@@ -23,55 +24,13 @@ export function Superfan() {
                              <h3 className='mt-8 mb-1'>Våre fans og artister:</h3>
                             </div>
                             <div>
-                                <div className='flex flex-row w-dvw-full overflow-x-auto'>
-                                <Image 
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 19.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
-                                    <Image
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 20.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
-                                    <Image
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 21.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
-                                    <Image
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 22.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
-                                    <Image
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 23.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
-                                    <Image
-                                    className='border-3 p-1 border-indigo-600 rounded-full'
-                                    src="/Rectangle 24.png"
-                                    alt=""
-                                    width={70}
-                                    height={70}
-                                    draggable={false}
-                                    />
+                                <div className='flex flex-row'>
+                                <Members />
+                                <Members />
+                                <Members />
+                                <Members />
+                                <Members />
+                                <Members />                                    
                             </div>
                             <p className='mt-1'>[komentar felt]</p>
                         </div>                            
