@@ -3,19 +3,37 @@
 import React from "react";
 import Link from "next/link";
 
+type Variant = "primary" | "secondary" | "icon";
+
+const variantStyles: Record<Variant, string> = {
+  primary:
+    "bg-[#8748E2] px-6 py-3 text-white font-semibold hover:bg-[#6028B0] cursor-pointer",
+  secondary:
+    "bg-[#6028B0] px-6 py-3 text-white font-semibold hover:bg-[#8748E2] cursor-pointer",
+  icon: "   border border-[#6028B0]  cursor-pointer",
+};
+
 type ButtonProps = {
   children: React.ReactNode;
-
+  variant: Variant;
   href?: string;
-  className?: string;
+  className: string;
+  type?: "button" | "submit" | "reset";
   onClick?: () => void;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function Button({ children, href, className, onClick }: ButtonProps) {
+export function Button({
+  children,
+  variant = "primary",
+  href,
+  className,
+  type = "button",
+  onClick,
+}: ButtonProps) {
   const base = `
-          py-3 px-6  rounded-sm  bg-light-purple text-white font-semibold hover:bg-[#4E208E] cursor-pointer transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed`;
-
-  const combined = `${base} ${className}`;
+         px-3 py-3 text-center transition duration-300`;
+  const styles = variantStyles[variant];
+  const combined = `${base} ${styles} ${className}`;
 
   if (href) {
     return (
@@ -26,7 +44,7 @@ export function Button({ children, href, className, onClick }: ButtonProps) {
   }
 
   return (
-    <button onClick={onClick} className={combined}>
+    <button type={type} onClick={onClick} className={combined}>
       {children}
     </button>
   );

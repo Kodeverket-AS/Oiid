@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "./ui/buttons/Button";
 import Image from "next/image";
 
@@ -25,7 +26,7 @@ export function How() {
           </div>
         </div>
         <div className="relative w-full h-full flex items-center justify-center ">
-          <div className=" rounded-full w-[400px] lg:w-[500px] h-[400px] lg:h-[500px] bg-purple-900 mb-10 blur-xl"></div>
+          <div className=" rounded-full w-[400px] lg:w-[500px] h-[400px] lg:h-[500px] dark:bg-purple-900 bg-gray-600 mb-10 blur-xl"></div>
           <div
             className="absolute z-10
           transition-all duration-500 ease-out 
@@ -54,13 +55,17 @@ export function How() {
           </div>
         </div>
       </div>
-      <div className="w-full h-full gap-10 inline-block lg:flex  flex-col lg:flex-row items-center justify-center my-20 ">
-        <h1 className="text-5xl  lg:w-2/3">
+      <div className="w-full h-full lg:flex  gap-10 flex-col lg:flex-row items-center justify-center my-20 ">
+        <h1 className="text-4xl lg:text-5xl p-2  lg:w-2/3">
           Gå til registreringssiden vår for å starte din egen superfan-app i
           dag!
         </h1>
+
         <div className="">
-          <Button className="mt-10 lg:mt-6 px-16 w-full lg:w-auto">
+          <Button
+            className="mt-5  rounded-sm lg:mt-6 px-16 w-full lg:w-auto"
+            variant={"primary"}
+          >
             Sign-Up
           </Button>
         </div>
