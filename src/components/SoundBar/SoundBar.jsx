@@ -8,7 +8,7 @@ const SoundBar = () => {
   const numberOfBars = 150;
   
   
-  const MAX_HEIGHT = 160;
+  
   
   
   const generateInitialHeights = () => {
@@ -31,7 +31,7 @@ const SoundBar = () => {
   useEffect(() => {
     const animationIntervals = [];
     
-    // Tworzymy interwał dla każdego słupka
+   
     for (let i = 0; i < numberOfBars; i++) {
       const interval = setInterval(() => {
         setBarHeights(prevHeights => {
