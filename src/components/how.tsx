@@ -7,7 +7,7 @@ export function How() {
   return (
     <section>
       <div className="mt-20 h-full w-full flex justify-center gap-10 xl:gap-0 items-center  flex-col md:flex-row  ">
-        <div className="w-full text-start px-2  space-y-10 mb-10 ">
+        <div className="w-full text-start  space-y-10 mb-10 ">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight ">
             Hvordan funker det?
           </h1>
