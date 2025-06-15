@@ -1,6 +1,6 @@
 const NavbarDesktop = () => {
   return (
-    <nav className="hidden md:flex w-full h-26 bg-[#121212] items-center justify-between  text-white">
+    <nav className="hidden md:flex w-full h-26  items-center justify-between ">
       <div className="flex items-center">
         <img src="./logo.png" alt="logo" className="h-[64px] w-auto" />
       </div>
