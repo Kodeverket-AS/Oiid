@@ -56,7 +56,7 @@ export function How() {
         </div>
       </div>
       <div className="w-full h-full lg:flex  gap-10 flex-col lg:flex-row items-center justify-center my-20 ">
-        <h1 className="text-4xl lg:text-5xl p-2  lg:w-2/3">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl p-2  lg:w-2/3">
           Gå til registreringssiden vår for å starte din egen superfan-app i
           dag!
         </h1>
