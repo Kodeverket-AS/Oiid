@@ -9,7 +9,7 @@ const NavbarMobile = () => {
   };
 
   return (
-    <nav className="w-full h-26  bg-[#121212] flex items-center justify-between   text-white md:hidden">
+    <nav className="w-full h-26   flex items-center justify-between   md:hidden">
       <div className="flex items-center">
         <img src="./logo.png" alt="logo" className="h-[64px] w-auto" />
       </div>

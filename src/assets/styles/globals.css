@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #121212;
   --foreground: #ffffff;
-
 }
 
 @theme inline {
@@ -12,16 +13,13 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-dark-gray:#6a6a6a;
-  --color-medium-gray:#ADADAD;
-  --color-light-gray:#D9D9D9;
-  --color-background-dark:#121212;
-  --color-dark-purple: #28242E;
-  --color-light-purple: #8748E2;
-
+  --color-dark-gray: #6a6a6a;
+  --color-medium-gray: #adadad;
+  --color-light-gray: #d9d9d9;
+  --color-background-dark: #121212;
+  --color-dark-purple: #28242e;
+  --color-light-purple: #8748e2;
 }
-
-
 
 body {
   box-sizing: border-box;
@@ -30,19 +28,26 @@ body {
   align-items: center;
   width: 100%;
   min-height: 100svh;
-  background: var(--background);
-  color: var(--foreground);
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   flex: 1;
-  @apply container
+  @apply container;
 }
 
 .fade-edge {
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 55%);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 0) 55%
+  );
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
