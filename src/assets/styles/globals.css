@@ -2,7 +2,6 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 @font-face {
   font-family: "Open Sans";
   src: url("OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
@@ -34,10 +33,9 @@
   --font-raleway: "Raleway", sans-serif;
 }
 
-
 html {
   scroll-behavior: smooth;
-} 
+}
 
 body {
   box-sizing: border-box;
@@ -46,6 +44,7 @@ body {
   align-items: center;
   width: 100%;
   min-height: 100svh;
+  padding-inline: 15px;
   font-family: "Open Sans", sans-serif;
 }
 
