@@ -14,7 +14,7 @@ const Footer = () => {
             />
           </div>
           <div className="text-sm ">
-            Utviklet i regi av Kodeforest Bergen © 2025
+            Utviklet i regn av Kodeverket Bergen © 2025
           </div>
         </div>
 

@@ -6,23 +6,14 @@ const NavbarDesktop = () => {
       </div>
 
       <div className="flex items-center space-x-8">
-        <a
-          href="#"
-          className="text-base hover:text-gray-300 transition-colors"
-        >
-          Hva er det?
+        <a href="#" className="text-base hover:text-gray-300 transition-colors">
+          What is Superfan App?
         </a>
-        <a
-          href="#"
-          className="text-base hover:text-gray-300 transition-colors"
-        >
-          Hvordan funker det?
+        <a href="#" className="text-base hover:text-gray-300 transition-colors">
+          How does it work?
         </a>
-        <a
-          href="#"
-          className="text-base hover:text-gray-300 transition-colors"
-        >
-          Kontakt oss i Oi:d
+        <a href="#" className="text-base hover:text-gray-300 transition-colors">
+          Contact us
         </a>
       </div>
     </nav>
