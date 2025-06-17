@@ -9,7 +9,6 @@ export function ModeToogle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // Ensure theme is only used after mounting to prevent hydration mismatch
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
@@ -17,7 +16,7 @@ export function ModeToogle() {
   return (
     <Button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className=" transition-colors duration-300 bg-transparent hover:bg-amber-100 dark:hover:bg-gray-700 rounded-full"
+      className=" transition-colors duration-300 bg-transparent hover:bg-purple-900 hover:text-white rounded-full"
       variant={"icon"}
       aria-label="Toggle dark and lightmode"
     >
