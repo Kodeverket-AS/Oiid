@@ -48,16 +48,16 @@ const NavbarMobile = () => {
       </div>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-[#121212] shadow-lg py-4 px-4 sm:px-8 z-50">
+        <div className="absolute top-16 left-0 right-0  shadow-lg py-4 px-4 sm:px-8 z-50">
           <div className="flex flex-col space-y-4">
             <a href="#" className="hover:text-gray-300 transition-colors">
-              Hva er det?
+              What is Superfan App?
             </a>
             <a href="#" className="hover:text-gray-300 transition-colors">
-              Hvordan funker det?
+              How does it work?
             </a>
             <a href="#" className="hover:text-gray-300 transition-colors">
-              Kontakt oss i Oi:d
+              Contact us 
             </a>
           </div>
         </div>
