@@ -17,7 +17,7 @@ export function Superfan() {
                      />                
 
                 <div className='flex flex-col md:w-1/2 md:ml-15'>
-                    <h1 className='text-5xl'>Hva er Superfan?</h1>
+                    <h1 className='text-5xl font-raleway font-semibold'>Hva er Superfan?</h1>
                     <p className='mt-5'>The Superfan app powered by Oiid allows the artist to create a curated safe space, where the artist and their most dedicated fans meet.</p>
                         <div className=''>
                             <div>

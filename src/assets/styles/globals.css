@@ -2,6 +2,16 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+}
 :root {
   --background: #121212;
   --foreground: #ffffff;
@@ -19,7 +29,15 @@
   --color-background-dark: #121212;
   --color-dark-purple: #28242e;
   --color-light-purple: #8748e2;
+
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
 }
+
+
+html {
+  scroll-behavior: smooth;
+} 
 
 body {
   box-sizing: border-box;
@@ -28,8 +46,7 @@ body {
   align-items: center;
   width: 100%;
   min-height: 100svh;
-
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {

@@ -6,14 +6,18 @@ import Image from "next/image";
 export function How() {
   return (
     <section>
-      <div className="mt-20 h-full w-full flex justify-center gap-10 xl:gap-0 items-center  flex-col md:flex-row  ">
-        <div className="w-full text-start  space-y-10 mb-10 ">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight ">
+
+      <div className="mt-20 h-full w-full flex justify-center gap-10 items-center  flex-col lg:flex-row  ">
+        <div className="w-full text-start p-2  space-y-10 mb-10">
+          <h1 className="text-5xl lg:text-5xl font-semibold leading-tight font-raleway ">
+
             Hvordan funker det?
           </h1>
 
           <div className="space-y-6">
-            <h2 className="text-2xl lg:text-3xl xl:text-4xl font-semibold">
+
+            <h2 className="text-3xl font-raleway font-semibold">
+
               Bli kunstneren i din fankultur
             </h2>
             <p className="md:w-4/5  ">
@@ -56,7 +60,9 @@ export function How() {
         </div>
       </div>
       <div className="w-full h-full lg:flex  gap-10 flex-col lg:flex-row items-center justify-center my-20 ">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl p-2  lg:w-2/3">
+
+        <h1 className="text-4xl lg:text-5xl p-2 font-semibold font-raleway lg:w-2/3">
+
           Gå til registreringssiden vår for å starte din egen superfan-app i
           dag!
         </h1>
