@@ -30,7 +30,7 @@ const ContactForm = () => {
   
 
       <div className="flex-1 flex flex-col justify-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
+        <h2 className="text-3xl md:text-5xl font-semibold font-raleway text-white mb-4 md:mb-6">
           Har du spørsmål,<br />
           kan du spørre oss?
         </h2>
