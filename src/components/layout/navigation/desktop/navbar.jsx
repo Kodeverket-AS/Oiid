@@ -6,11 +6,12 @@ const NavbarDesktop = () => {
       </div>
 
       <div className="flex items-center space-x-8">
+
         <a
           href="#"
           className="hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
-          Hva er det?
+          What is Superfan App?
           <span
             className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
             "
@@ -20,7 +21,7 @@ const NavbarDesktop = () => {
           href="#"
           className=" hover:text-purple-900 hover:dark:text-purple-400  transition duration-200 "
         >
-          Hvordan funker det?
+          How does it work?
           <span
             className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
             "
@@ -30,11 +31,12 @@ const NavbarDesktop = () => {
           href="#"
           className="hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
-          Kontakt oss i Oiid
+           Contact us
           <span
             className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
              "
           ></span>
+
         </a>
       </div>
     </nav>
