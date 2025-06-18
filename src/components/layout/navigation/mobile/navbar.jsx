@@ -48,12 +48,11 @@ const NavbarMobile = () => {
       </div>
 
       {isOpen && (
-
         <div className="absolute top-20 left-0 right-0 bg-white/85 dark:bg-background-dark/50 shadow-lg py-4 px-4 sm:px-8 z-50">
           <div className="flex flex-col items-start space-y-4">
             <a
               href="#"
-              className="group active:text-purple-700 dark:active:text-purple-400 "
+              className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
               What is Superfan App?
               <span
@@ -63,7 +62,7 @@ const NavbarMobile = () => {
             </a>
             <a
               href="#"
-              className="group active:text-purple-700 dark:active:text-purple-400 "
+              className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
               How does it work?
               <span
@@ -73,14 +72,13 @@ const NavbarMobile = () => {
             </a>
             <a
               href="#"
-              className="group active:text-purple-700 dark:active:text-purple-400 "
+              className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
-               Contact us
+              Contact us
               <span
                 className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
              group-focus:left-0 group-focus:w-full "
               ></span>
-
             </a>
           </div>
         </div>
