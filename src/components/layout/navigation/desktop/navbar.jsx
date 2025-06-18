@@ -7,6 +7,7 @@ const NavbarDesktop = () => {
 
       <div className="flex items-center space-x-8">
         <a
+          draggable="false"
           href="#"
           className="relative group hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
@@ -17,6 +18,7 @@ const NavbarDesktop = () => {
           ></span>
         </a>
         <a
+          draggable="false"
           href="#"
           className="relative group hover:text-purple-900 hover:dark:text-purple-400  transition duration-200 "
         >
@@ -27,6 +29,7 @@ const NavbarDesktop = () => {
           ></span>
         </a>
         <a
+          draggable="false"
           href="#"
           className="relative group hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
