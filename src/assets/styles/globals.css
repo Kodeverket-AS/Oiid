@@ -71,3 +71,12 @@ main {
   -webkit-mask-size: cover;
   mask-size: cover;
 }
+
+nav a {
+  position: relative;
+}
+
+nav a:hover span {
+  left: 0;
+  width: 100%;
+}

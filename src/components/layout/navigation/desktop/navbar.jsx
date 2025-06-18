@@ -8,21 +8,33 @@ const NavbarDesktop = () => {
       <div className="flex items-center space-x-8">
         <a
           href="#"
-          className="text-base hover:text-gray-300 transition-colors"
+          className="hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
           Hva er det?
+          <span
+            className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
+            "
+          ></span>
         </a>
         <a
           href="#"
-          className="text-base hover:text-gray-300 transition-colors"
+          className=" hover:text-purple-900 hover:dark:text-purple-400  transition duration-200 "
         >
           Hvordan funker det?
+          <span
+            className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
+            "
+          ></span>
         </a>
         <a
           href="#"
-          className="text-base hover:text-gray-300 transition-colors"
+          className="hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
         >
-          Kontakt oss i Oi:d
+          Kontakt oss i Oiid
+          <span
+            className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-purple-900 dark:bg-purple-600 transition-all duration-200 
+             "
+          ></span>
         </a>
       </div>
     </nav>
