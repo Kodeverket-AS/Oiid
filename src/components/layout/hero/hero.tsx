@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+
+import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -20,7 +20,7 @@ export function Hero() {
           <div>
             <div className="flex flex-col md:flex-row">
               <h1 className="lg:text-[80px] text-5xl font-raleway font-semibold">
-                Tettere på fansen enn noen gang før med{" "}
+                Closer to your fans than ever before with{" "}
                 <span
                   className="font-bold"
                   style={{ color: "rgba(135, 72, 226, 1)" }}
@@ -33,8 +33,8 @@ export function Hero() {
 
           <div>
             <p className="mt-3">
-              Hjelper artister med å skape unike musikkrom med direkte tilgang
-              til sine mest lidenskapelige fans.
+              Our app helps artists create unique music spaces with direct access to
+              their most passionate fans.
             </p>
           </div>
         </div>
