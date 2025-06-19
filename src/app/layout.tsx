@@ -5,25 +5,28 @@ import Footer from "@/components/layout/footer/footer";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "Tempalte page",
-  description: "Kodeverket sin NextJS template",
+    title: "oiid Superfan App",
+    description: "A Next.js app for oiid Superfan",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang='en' suppressHydrationWarning>
+            <body>
+                <ThemeProvider
+                    attribute='class'
+                    defaultTheme='system'
+                    enableSystem
+                >
+                    <Header />
+                    {children}
+                    <Footer />
+                </ThemeProvider>
+            </body>
+        </html>
+    );
 }
-
