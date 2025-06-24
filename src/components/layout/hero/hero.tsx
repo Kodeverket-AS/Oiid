@@ -8,10 +8,11 @@ export function Hero() {
       <div className="md:w-2/3">
         <Image
           className="w-full h-auto"
-          src="/Hero-Img.png"
+          src="/Hero-Img2.png"
           alt="Hero Image"
-          width={425}
-          height={319}
+          width={1000}
+          height={1000}
+          style={{ objectFit: "cover" }}
           draggable={false}
         />
       </div>
