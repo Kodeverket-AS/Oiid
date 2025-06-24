@@ -52,7 +52,7 @@ const NavbarMobile = () => {
           <div className="flex flex-col items-start space-y-4">
             <a
               draggable="false"
-              href="#"
+              href="#superfan"
               className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
               What is Superfan App?
@@ -63,7 +63,7 @@ const NavbarMobile = () => {
             </a>
             <a
               draggable="false"
-              href="#"
+              href="#how"
               className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
               How does it work?
@@ -74,7 +74,7 @@ const NavbarMobile = () => {
             </a>
             <a
               draggable="false"
-              href="#"
+              href="#contact"
               className="group relative active:text-purple-700 dark:active:text-purple-400 "
             >
               Contact us

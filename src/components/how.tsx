@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export function How() {
   return (
-    <section>
-      <div className="mt-20 h-full w-full flex justify-center gap-10 items-center flex-col lg:flex-row ">
+    <section id="how" className="pt-10">
+      <div className="h-full w-full flex justify-center gap-10 items-center flex-col lg:flex-row ">
         <div className="w-full text-start p-2 space-y-10 mb-10">
           <h1 className="text-5xl lg:text-5xl font-semibold leading-tight font-raleway ">
             How does it work?

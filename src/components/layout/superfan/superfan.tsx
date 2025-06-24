@@ -5,7 +5,7 @@ import { Members } from "@/components/Members";
 
 export function Superfan() {
   return (
-    <section className="flex flex-col items-center w-full md:flex-row md:justify-center ">
+    <section  id="superfan" className="flex flex-col items-center w-full  md:flex-row md:justify-center ">
       <Image
         className="fade-edge md:w-1/3"
         src="/Superfan.jpg"

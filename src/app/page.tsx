@@ -10,9 +10,10 @@ export default function Home() {
     <main>
       <Hero />
       <SoundWave />
-      <Superfan />
-      <How />
-      <ContactForm />
+        <Superfan />
+        <How />
+        <ContactForm />
+      
     </main>
   );
 }
