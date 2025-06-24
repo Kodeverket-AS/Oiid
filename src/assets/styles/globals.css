@@ -77,3 +77,21 @@ nav a:hover span {
   left: 0;
   width: 100%;
 }
+
+/* endre skyggefarge*/
+@keyframes wave {
+  0%,
+  100% {
+    box-shadow: 0 0 4px rgb(135, 72, 226);
+    transform: scaleY(0.1);
+  }
+  50% {
+    transform: scaleY(2.2);
+    box-shadow: 0 0 9px rgb(78, 33, 142);
+  }
+}
+
+.animate-wave {
+  animation: wave 1s ease-in-out infinite;
+}
+
