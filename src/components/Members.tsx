@@ -9,7 +9,7 @@ type MembersProps = {
 
 export function Members( { src, alt = "", width = 70, height = 70 }: MembersProps ) {
 return (
-    <span className=" -m-2 border-4 border-indigo-600 rounded-full">
+    <span className=" -m-2 border-4 border-white dark:border-black outline-2 outline-light-purple rounded-full">
         <Image 
             src={src}
             alt={alt}

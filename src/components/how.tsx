@@ -40,7 +40,7 @@ export function How() {
             />
           </div>
 
-          <div className="rounded-full w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] xl:w-[600px] xl:h-[600px]  bg-purple-900  dark:bg-gray-500 mb-10 blur-xl"></div>
+          <div className="rounded-full w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] md:w-[350px] md:h-[350px] lg:w-[450px] lg:h-[450px] xl:w-[600px] xl:h-[600px]  bg-light-purple  mb-10 blur-xl"></div>
           <div
             className="absolute 
     transition-all duration-500 ease-out 
