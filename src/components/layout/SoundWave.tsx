@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import React, { useState, useEffect, useMemo } from "react";
 
 interface Bar {
@@ -12,6 +13,10 @@ interface Bar {
 export default function SoundWave() {
   const [mounted, setMounted] = useState(false);
   const [barCount, setBarCount] = useState<number>(40);
+
+  const { resolvedTheme } = useTheme();
+
+  const isDark = resolvedTheme === "dark";
 
   useEffect(() => {
     setMounted(true);
@@ -29,7 +34,7 @@ export default function SoundWave() {
   const [bars] = useState<Bar[]>(() =>
     Array.from({ length: 80 }).map((_, i) => ({
       key: i,
-      delay: (i % 10) * 0.1,
+      delay: (i % 10) * 0,
       duration: 0.7 + (i % 10) * 0.4,
       baseHeight: 15 + Math.random() * 45,
     }))
@@ -47,7 +52,10 @@ export default function SoundWave() {
       {visibleBars.map(({ key, delay, duration, baseHeight }) => (
         <div
           key={key}
-          className="w-[4px] rounded-3xl bg-gray-600 animate-wave  origin-center"
+          className={`w-[4px] rounded-3xl bg-gray-600 origin-center   ${
+            isDark ? "animate-wave-dark" : "animate-wave-light"
+          }
+  `}
           style={{
             animationDelay: `${delay}s`,
             animationDuration: `${duration}s`,

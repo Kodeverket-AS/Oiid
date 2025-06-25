@@ -55,12 +55,16 @@ main {
 }
 
 .fade-edge {
-  -webkit-mask-image: radial-gradient(circle,
-      rgba(0, 0, 0, 1) 70%,
-      rgba(0, 0, 0, 0) 100%);
-  mask-image: radial-gradient(circle,
-      rgba(0, 0, 0, 1) 35%,
-      rgba(0, 0, 0, 0) 55%);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 0) 55%
+  );
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -78,8 +82,7 @@ nav a:hover span {
   width: 100%;
 }
 
-/* endre skyggefarge*/
-@keyframes wave {
+@keyframes wave-dark {
   0%,
   100% {
     box-shadow: 0 0 4px rgb(135, 72, 226);
@@ -91,7 +94,22 @@ nav a:hover span {
   }
 }
 
-.animate-wave {
-  animation: wave 1s ease-in-out infinite;
+@keyframes wave-light {
+  0%,
+  100% {
+    transform: scaleY(0.1);
+    box-shadow: 0 0 4px rgba(217, 217, 217);
+  }
+  50% {
+    transform: scaleY(2.2);
+    box-shadow: 0 0 6px rgba(106, 106, 106);
+  }
 }
 
+.animate-wave-dark {
+  animation: wave-dark 1s ease-in-out infinite;
+}
+
+.animate-wave-light {
+  animation: wave-light 1s ease-in-out infinite;
+}
