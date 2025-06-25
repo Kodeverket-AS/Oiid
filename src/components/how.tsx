@@ -8,7 +8,8 @@ export function How() {
         <section id='how' className='pt-10'>
             <div className='h-full w-full flex justify-center gap-10 items-center flex-col lg:flex-row '>
                 <div className='w-full text-start p-2 space-y-10 mb-10'>
-                    <h1 className='text-5xl lg:text-5xl font-semibold leading-tight font-raleway '>
+                  <div id="scrollsection" className="max-h-1/3 flex flex-col gap-40">
+                     <h1 className='text-5xl lg:text-5xl font-semibold leading-tight font-raleway '>
                         How does it work?
                     </h1>
                     <div className='space-y-6'>
@@ -24,6 +25,28 @@ export function How() {
                             physical releases, and merch.
                         </p>
                     </div>
+ <div className='space-y-6 '>
+                            <h2 className='text-3xl font-raleway font-semibold'>
+                                Collaborate with others
+                            </h2>
+                            <p className='md:w-4/5'>
+                                Connect with fellow superfans, share your creations,
+                                and build your own community within the fanbase.
+                            </p>
+                        </div>
+                        <div className='space-y-6 '>
+                            <h2 className='text-3xl font-raleway font-semibold'>
+                                Get exclusive rewards
+                            </h2>
+                            <p className='md:w-4/5'>
+                                Access early-bird tickets, special merchandise,
+                                and fan-only physical releases.
+                            </p>
+                        </div>
+
+  </div>
+                    
+
                 </div>
                 <div className='relative flex justify-center items-center md:w-1/2'>
                     <div
