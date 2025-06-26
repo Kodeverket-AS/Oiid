@@ -9,21 +9,30 @@ const NavbarDesktop = () => {
         <a
           draggable="false"
           href="#superfan"
-          className="relative group hover:scale-110 hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
+          className="neon-text hover:scale-110 hover:text-purple-900
+    transition-transform
+    duration-300 ease-in-out"
+          style={{ willChange: "transform" }}
         >
           What is Superfan App?
         </a>
         <a
           draggable="false"
           href="#how"
-          className="relative group group hover:scale-110 hover:text-purple-900 hover:dark:text-purple-400  transition duration-200 "
+          className="neon-text hover:scale-110 hover:text-purple-900
+    transition-transform
+    duration-300 ease-in-out"
+          style={{ willChange: "transform" }}
         >
           How does it work?
         </a>
         <a
           draggable="false"
           href="#contact"
-          className="relative group group hover:scale-110 hover:text-purple-900 hover:dark:text-purple-400 transition duration-200 "
+          className="neon-text hover:scale-110 hover:text-purple-900
+          transition-transform 
+    duration-300 ease-in-out"
+          style={{ willChange: "transform" }}
         >
           Contact us
         </a>
