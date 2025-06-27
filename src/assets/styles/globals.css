@@ -124,3 +124,35 @@ nav a:hover span {
   text-shadow: 0 0 2px rgba(31, 137, 170, 0.8), 0 0 8px rgba(0, 255, 255, 0.6),
     0 0 16px rgba(0, 255, 255, 0.4), 0 0 22px rgba(0, 255, 255, 0.2);
 }
+
+.toggle-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.toggle-btn:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.toggle-btn:hover {
+  background-color: #581c87;
+  color: white;
+}
+
+.dark .toggle-btn:hover::after {
+  background: transparent;
+  filter: drop-shadow(0 0 2px #773ca4) drop-shadow(0 0 2px #6d309c)
+    drop-shadow(0 0 1px #581c87);
+  box-shadow: 0 0 2px rgba(31, 137, 170, 0.8), 0 0 8px rgba(0, 255, 255, 0.6),
+    0 0 16px rgba(0, 255, 255, 0.4), 0 0 12px rgba(0, 255, 255, 0.2);
+}

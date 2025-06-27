@@ -16,14 +16,14 @@ export function ModeToogle() {
   return (
     <Button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className=" transition-colors duration-300 bg-transparent hover:bg-purple-900 hover:text-white rounded-full"
+      className="toggle-btn  transform-gpu transition-colors duration-200  rounded-full mx-4"
       variant={"icon"}
       aria-label="Toggle dark and lightmode"
     >
       {theme === "dark" ? (
-        <Moon className="h-[1.1rem] w-[1.1rem]  " />
+        <Moon className="h-[1.1rem] w-[1.1rem] md:h-[1.5rem] md:w-[1.5rem]" />
       ) : (
-        <Sun className="h-[1.1rem] w-[1.1rem] " />
+        <Sun className="h-[1.1rem] w-[1.1rem] md:h-[1.5rem] md:w-[1.5rem]" />
       )}
     </Button>
   );
