@@ -13,7 +13,7 @@ const NavbarDesktop = () => {
         <a
           draggable="false"
           href="#superfan"
-          className="neon-text hover:scale-110 hover:text-purple-900
+          className=" hover:scale-110 hover:text-light-purple
     transition-transform
     duration-300 ease-in-out"
           style={{ willChange: "transform" }}
@@ -23,7 +23,7 @@ const NavbarDesktop = () => {
         <a
           draggable="false"
           href="#how"
-          className="neon-text hover:scale-110 hover:text-purple-900
+          className=" hover:scale-110 hover:text-light-purple
     transition-transform
     duration-300 ease-in-out"
           style={{ willChange: "transform" }}
@@ -33,7 +33,7 @@ const NavbarDesktop = () => {
         <a
           draggable="false"
           href="#contact"
-          className="neon-text hover:scale-110 hover:text-purple-900
+          className=" hover:scale-110 hover:text-light-purple
           transition-transform 
     duration-300 ease-in-out"
           style={{ willChange: "transform" }}
