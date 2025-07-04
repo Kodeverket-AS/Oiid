@@ -51,7 +51,7 @@ export function How() {
       </div>
 
       <div className="w-full h-full lg:flex gap-10 flex-col items-center justify-center my-20">
-        <h2 className="text-4xl lg:text-5xl p-2 font-semibold font-raleway text-center 2xl:w-3/4">
+        <h2 className="text-4xl lg:text-5xl pb-6 font-semibold leading-12 font-raleway text-center 2xl:w-3/4">
           Head to our registration page and launch your own Superfan app today!
         </h2>
         <div className="w-full flex justify-center max-w-3xl my-3">
@@ -69,9 +69,9 @@ export function How() {
 
 function Slide1() {
   return (
-    <div className="slide1 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 pr-14 lg:pb-4">
+    <div className="slide1 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 2xl:pl-14  lg:pb-4">
       <div className="space-y-6 lg:max-w-1/2">
-        <h2 className="text-3xl font-raleway font-semibold">
+        <h2 className="text-3xl leading-12 font-raleway font-semibold">
           Artists & Superfans — Building It Together
         </h2>
         <p className="pb-8 leading-7">
@@ -88,7 +88,7 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <div className="slide2 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 pr-14 lg:pb-4">
+    <div className="slide2 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 lg:pr-12  lg:pb-4">
       <div className="space-y-6 lg:max-w-1/2">
         <h2 className="text-3xl font-raleway font-semibold">
           Artists, Keep It Simple
@@ -108,7 +108,7 @@ function Slide2() {
 
 function Slide3() {
   return (
-    <div className="slide3 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 pr-14 lg:pb-4">
+    <div className="slide3 flex flex-col lg:flex-row justify-center gap-8 items-center pt-14 lg:pr-12  lg:pb-4">
       <div className="space-y-6 lg:max-w-1/2 ">
         <h2 className="text-3xl font-raleway font-semibold">
           More Than Just a Fan
