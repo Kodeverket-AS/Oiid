@@ -15,7 +15,6 @@
 :root {
   --background: #121212;
   --foreground: #ffffff;
-  --color-light-purple: #8748e2;
 }
 
 @theme inline {
@@ -29,6 +28,7 @@
   --color-light-gray: #d9d9d9;
   --color-background-dark: #121212;
   --color-dark-purple: #28242e;
+  --color-light-purple: #8748e2;
 
   --font-open-sans: "Open Sans", sans-serif;
   --font-raleway: "Raleway", sans-serif;
@@ -164,8 +164,4 @@ nav a:hover span {
 .swiper-pagination-bullet-active {
   background: var(--color-light-purple) !important;
   opacity: 1;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  background: var(--color-light-purple) !important;
 }
