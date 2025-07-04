@@ -33,7 +33,7 @@ export function Hero() {
           </div>
 
           <div>
-            <p className="mt-3">
+            <p className="mt-3 leading-7">
               Our app helps artists create unique music spaces with direct access to
               their most passionate fans.
             </p>
