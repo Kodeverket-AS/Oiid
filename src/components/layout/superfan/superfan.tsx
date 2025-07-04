@@ -22,7 +22,7 @@ export function Superfan() {
                 <h1 className='text-5xl font-raleway font-semibold'>
                     What is Superfan?
                 </h1>
-                <p className='mt-5'>
+                <p className='mt-5 leading-7 '>
                     The Superfan app, powered by Oiid, provides artists with a
                     private, secure platform to build an exclusive community and
                     directly engage with their most loyal fans, fostering deeper
