@@ -32,10 +32,10 @@ export function Superfan() {
                 </p>
                 <div className=''>
                     <div>
-                        <h3 className='mt-8 mb-1'>Our fans and artists:</h3>
+                        <h3 className='mt-8 mb-6'>Our fans and artists:</h3>
                     </div>
                     <div>
-                        <div className='flex flex-row mt-3 mb-3 justifycontent-center items-center gap-2'>
+                        <div className='flex flex-row ml-2 my-4 justifycontent-center items-center gap-2'>
                             {members.map((m, i) => (
                                 <span
                                     key={m.name}
