@@ -16,7 +16,7 @@ export function ModeToogle() {
   return (
     <Button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="toggle-btn  transform-gpu transition-colors duration-200  rounded-full mx-4"
+      className="toggle-btn  transform-gpu transition-colors duration-200  rounded-full lg:mr-0 mr-4"
       variant={"icon"}
       aria-label="Toggle dark and lightmode"
     >
