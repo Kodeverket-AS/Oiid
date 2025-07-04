@@ -2,7 +2,7 @@ export const members = [
   {
     name: "Lena",
     opinion: "Loved the experience! The artist truly connected with us.",
-    src: "/Rectangle 19.png",
+    src: "/members/Rectangle 19.png",
   },
   {
     name: "Kaya",
