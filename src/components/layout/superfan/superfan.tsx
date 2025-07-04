@@ -40,13 +40,13 @@ export function Superfan() {
                                 <span
                                     key={m.name}
                                     onClick={() => setSelected(i)}
-                                    className="cursor-pointer hover:shadow-lg transition-shadow duration-200 -m-2 border-4 border-white outline-2 outline-light-purple dark:border-black rounded-full"
+                                    className={`-m-3 cursor-pointer hover:shadow-lg transition-shadow duration-200 border-4 border-white dark:border-black rounded-full${selected === i ? ' outline-4 outline-light-purple' : ''}`}
                                 >
                                     <Image
                                         src={m.src}
                                         alt={m.name}
-                                        width={70}
-                                        height={70}
+                                        width={80}
+                                        height={80}
                                         draggable={false}
                                     />
                                 </span>
@@ -54,7 +54,7 @@ export function Superfan() {
                         </div>
                         <div className="mt-6">
                             <p className='mt-1 font-bold'>{members[selected].name}</p>
-                            <p className='mt-1 italic'>"{members[selected].opinion}"</p>
+                     <p className='mt-1 italic'>&ldquo;{members[selected].opinion}&rdquo;</p>
                         </div>
                     </div>
                 </div>
