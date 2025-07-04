@@ -55,16 +55,12 @@ main {
 }
 
 .fade-edge {
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 70%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 35%,
-    rgba(0, 0, 0, 0) 55%
-  );
+  -webkit-mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0) 55%);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -83,11 +79,13 @@ nav a:hover span {
 }
 
 @keyframes wave-dark {
+
   0%,
   100% {
     box-shadow: 0 0 4px rgb(135, 72, 226);
     transform: scaleY(0.1);
   }
+
   50% {
     transform: scaleY(2.2);
     box-shadow: 0 0 9px rgb(78, 33, 142);
@@ -95,11 +93,13 @@ nav a:hover span {
 }
 
 @keyframes wave-light {
+
   0%,
   100% {
     transform: scaleY(0.1);
     box-shadow: 0 0 4px rgba(217, 217, 217);
   }
+
   50% {
     transform: scaleY(2.2);
     box-shadow: 0 0 6px rgba(106, 106, 106);
@@ -117,10 +117,10 @@ nav a:hover span {
 .dark .neon-text {
   color: #ffffff;
 }
+
 .dark .neon-text:hover {
   color: #ffffff;
-  filter: drop-shadow(0 0 5px #773ca4) drop-shadow(0 0 10px #6d309c)
-    drop-shadow(0 0 8px #581c87);
+  filter: drop-shadow(0 0 5px #773ca4) drop-shadow(0 0 10px #6d309c) drop-shadow(0 0 8px #581c87);
   text-shadow: 0 0 2px rgba(31, 137, 170, 0.8), 0 0 8px rgba(0, 255, 255, 0.6),
     0 0 16px rgba(0, 255, 255, 0.4), 0 0 22px rgba(0, 255, 255, 0.2);
 }
@@ -151,8 +151,17 @@ nav a:hover span {
 
 .dark .toggle-btn:hover::after {
   background: transparent;
-  filter: drop-shadow(0 0 2px #773ca4) drop-shadow(0 0 2px #6d309c)
-    drop-shadow(0 0 1px #581c87);
+  filter: drop-shadow(0 0 2px #773ca4) drop-shadow(0 0 2px #6d309c) drop-shadow(0 0 1px #581c87);
   box-shadow: 0 0 2px rgba(31, 137, 170, 0.8), 0 0 8px rgba(0, 255, 255, 0.6),
     0 0 16px rgba(0, 255, 255, 0.4), 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-light-purple) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-light-purple) !important;
+  opacity: 1;
 }

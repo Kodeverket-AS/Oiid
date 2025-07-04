@@ -3,9 +3,10 @@
 import { Button } from "./ui/buttons/Button";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 export function How() {
   return (
@@ -18,28 +19,22 @@ export function How() {
         </div>
       </div>
 
-    
-
-
-
       <div className="block lg:hidden space-y-10">
         <Slide1 />
         <Slide2 />
         <Slide3 />
       </div>
 
-
-
-      
-
-    
       <div className="hidden lg:block w-full">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination, Autoplay, EffectFade]}
           pagination={{ clickable: true }}
           autoplay={{ delay: 8000 }}
           loop={true}
           spaceBetween={30}
+          effect={"fade"}
+          fadeEffect={{ crossFade: true }}
+          speed={800}
           slidesPerView={1}
           className="w-full"
         >
@@ -60,7 +55,10 @@ export function How() {
           Head to our registration page and launch your own Superfan app today!
         </h2>
         <div className="w-full flex justify-center max-w-3xl my-3">
-          <Button className="rounded-sm px-16 w-full sm:w-auto" variant="primary">
+          <Button
+            className="rounded-sm px-16 w-full sm:w-auto"
+            variant="primary"
+          >
             Sign Up
           </Button>
         </div>
@@ -69,7 +67,6 @@ export function How() {
   );
 }
 
-
 function Slide1() {
   return (
     <div className="slide1 flex flex-col lg:flex-row justify-center gap-4 items-center pt-14 pr-14 lg:pb-4">
@@ -77,15 +74,17 @@ function Slide1() {
         <h2 className="text-3xl font-raleway font-semibold">
           Artists & Superfans — Building It Together
         </h2>
-        <p className="pb-8 w-7/8">
-          Superfans can shape their own profiles, interact directly with artists, and connect with like-minded fans across the world. Artists benefit from a community that not only listens, but actively engages, creating a deeper connection and a more meaningful fan experience.
+        <p className="pb-8 ">
+          Superfans can shape their own profiles, interact directly with
+          artists, and connect with like-minded fans across the world. Artists
+          benefit from a community that not only listens, but actively engages,
+          creating a deeper connection and a more meaningful fan experience.
         </p>
       </div>
       <SlideImage img1="/images/Stepper.png" img2="/images/android.png" />
     </div>
   );
 }
-
 
 function Slide2() {
   return (
@@ -94,15 +93,18 @@ function Slide2() {
         <h2 className="text-3xl font-raleway font-semibold">
           Artists, Keep It Simple
         </h2>
-        <p className="pb-8 w-7/8">
-          Artists can easily share and update content through a clean, login-based web interface. From uploading new material to keeping fans in the loop with announcements and exclusive content — everything is streamlined to help you focus on creativity and build stronger fan relationships.
+        <p className="pb-8 ">
+          Artists can easily share and update content through a clean,
+          login-based web interface. From uploading new material to keeping fans
+          in the loop with announcements and exclusive content — everything is
+          streamlined to help you focus on creativity and build stronger fan
+          relationships.
         </p>
       </div>
       <SlideImage img1="/images/Stepper2.png" img2="/images/android2.png" />
     </div>
   );
 }
-
 
 function Slide3() {
   return (
@@ -111,8 +113,12 @@ function Slide3() {
         <h2 className="text-3xl font-raleway font-semibold">
           More Than Just a Fan
         </h2>
-        <p className="pb-8 w-7/8">
-          Superfans can register their own accounts to create personalized versions of selected songs, collaborate with other fans, and take part in a vibrant community. They get early access to concert tickets, exclusive events, physical releases, and limited-edition merch — all designed for the most dedicated fans.
+        <p className="pb-8 ">
+          Superfans can register their own accounts to create personalized
+          versions of selected songs, collaborate with other fans, and take part
+          in a vibrant community. They get early access to concert tickets,
+          exclusive events, physical releases, and limited-edition merch — all
+          designed for the most dedicated fans.
         </p>
       </div>
       <SlideImage img1="/images/Stepper3.png" img2="/images/android3.png" />
