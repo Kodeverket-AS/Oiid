@@ -12,7 +12,7 @@ export function How() {
   return (
     <section id="how" className="pt-16 lg:pt-10">
       <div className="h-full w-full flex justify-center gap-10 items-center flex-col lg:flex-row">
-        <div className="w-full text-start p-2  lg:mb-10">
+        <div className="w-full text-start py-2  lg:mb-10">
           <h1 className="text-5xl lg:text-5xl font-semibold leading-tight font-raleway">
             How does it work?
           </h1>
