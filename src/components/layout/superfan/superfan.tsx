@@ -18,9 +18,9 @@ export function Superfan() {
                 draggable={false}
             />
 
-            <div className='flex flex-col md:w-1/2 md:ml-15'>
+            <div className='flex flex-col md:w-2/3 md:ml-15'>
                 <h1 className='text-5xl font-raleway font-semibold'>
-                    What is Superfan?
+                    What is Superfan app?
                 </h1>
                 <p className='mt-5 leading-7 '>
                     The Superfan app, powered by Oiid, provides artists with a

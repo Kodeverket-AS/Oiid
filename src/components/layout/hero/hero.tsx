@@ -20,7 +20,7 @@ export function Hero() {
         <div className="flex flex-col gap-1 md:mt-20 lg:gap-5">
           <div>
             <div className="flex flex-col md:flex-row">
-              <h1 className="lg:text-[80px] text-5xl font-raleway font-semibold">
+              <h1 className="lg:text-[80px] leading-15 lg:leading-22 text-5xl font-raleway font-semibold">
                 Closer to your fans than ever before with{" "}
                 <span
                   className="font-bold"
@@ -34,8 +34,8 @@ export function Hero() {
 
           <div>
             <p className="mt-3 leading-7">
-              Our app helps artists create unique music spaces with direct access to
-              their most passionate fans.
+              Our app helps artists create unique music spaces with direct
+              access to their most passionate fans.
             </p>
           </div>
         </div>
