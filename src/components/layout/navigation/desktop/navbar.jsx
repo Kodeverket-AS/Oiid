@@ -1,3 +1,7 @@
+
+import { ModeToogle } from "@/components/modeToggle";
+
+
 const NavbarDesktop = () => {
   return (
     <nav className="hidden md:flex w-full h-26 my-6 items-center justify-between ">
@@ -36,6 +40,7 @@ const NavbarDesktop = () => {
         >
           Contact us
         </a>
+        <ModeToogle/>
       </div>
     </nav>
   );
