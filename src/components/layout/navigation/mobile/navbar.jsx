@@ -1,5 +1,8 @@
+
+
 "use client";
 import { useState } from "react";
+import { ModeToogle } from "@/components/modeToggle";
 
 const NavbarMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +17,8 @@ const NavbarMobile = () => {
         <img src="./logo.png" alt="logo" className="h-[64px] w-auto" />
       </div>
 
-      <div>
+      <div className="flex items-center gap-2">
+        <ModeToogle />
         <button
           onClick={toggleMenu}
           className="focus:outline-none"
