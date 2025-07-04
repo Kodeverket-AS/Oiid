@@ -1,9 +1,11 @@
-import React from "react";
-import Image from "next/image";
+"use client"
 
-import { Members } from "@/components/Members";
+import React, { useState } from "react";
+import Image from "next/image";
+import { members } from "./members";
 
 export function Superfan() {
+    const [selected, setSelected] = useState(0);
     return (
         <section
             id='superfan'
@@ -33,45 +35,27 @@ export function Superfan() {
                         <h3 className='mt-8 mb-1'>Our fans and artists:</h3>
                     </div>
                     <div>
-                        <div className='flex flex-row mt-3 mb-3 justifycontent-center items-center'>
-                            <Members
-                                src='/Rectangle 19.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
-                            <Members
-                                src='/Rectangle 20.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
-                            <Members
-                                src='/Rectangle 21.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
-                            <Members
-                                src='/Rectangle 22.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
-                            <Members
-                                src='/Rectangle 23.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
-                            <Members
-                                src='/Rectangle 24.png'
-                                alt='profile picture'
-                                width={70}
-                                height={70}
-                            />
+                        <div className='flex flex-row mt-3 mb-3 justifycontent-center items-center gap-2'>
+                            {members.map((m, i) => (
+                                <span
+                                    key={m.name}
+                                    onClick={() => setSelected(i)}
+                                    className="cursor-pointer hover:shadow-lg transition-shadow duration-200 -m-2 border-4 border-white outline-2 outline-light-purple dark:border-black rounded-full"
+                                >
+                                    <Image
+                                        src={m.src}
+                                        alt={m.name}
+                                        width={70}
+                                        height={70}
+                                        draggable={false}
+                                    />
+                                </span>
+                            ))}
                         </div>
-                        <p className='mt-1 hidden'>[comment section]</p>
+                        <div className="mt-6">
+                            <p className='mt-1 font-bold'>{members[selected].name}</p>
+                            <p className='mt-1 italic'>"{members[selected].opinion}"</p>
+                        </div>
                     </div>
                 </div>
             </div>
