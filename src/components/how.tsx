@@ -101,7 +101,7 @@ function Slide2() {
           relationships.
         </p>
       </div>
-      <SlideImage img1="/images/Stepper2.png" img2="/images/android2.png" />
+      <SlideImage img1="/images/stepper2.png" img2="/images/android2.png" />
     </div>
   );
 }
