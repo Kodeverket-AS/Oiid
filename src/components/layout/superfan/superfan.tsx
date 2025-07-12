@@ -1,11 +1,28 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { members } from "./members";
 
 export function Superfan() {
     const [selected, setSelected] = useState(0);
+    const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+    useEffect(() => {
+        if (!isAutoPlaying) return;
+
+        const interval = setInterval(() => {
+            setSelected((prev) => (prev + 1) % members.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [isAutoPlaying]);
+
+    const handleAvatarClick = (index: number) => {
+        setSelected(index);
+        setIsAutoPlaying(false);
+    };
+
     return (
       <section
         id="superfan"
@@ -39,7 +56,7 @@ export function Superfan() {
                 {members.map((m, i) => (
                   <span
                     key={m.name}
-                    onClick={() => setSelected(i)}
+                    onClick={() => handleAvatarClick(i)}
                     className={`-m-3 cursor-pointer hover:shadow-lg transition-shadow duration-200 border-4 border-white dark:border-black rounded-full${
                       selected === i ? " outline-4 outline-light-purple" : ""
                     }`}
